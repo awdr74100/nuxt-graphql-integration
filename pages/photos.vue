@@ -5,4 +5,7 @@
 
 <script setup lang="ts">
 const { data } = await useAsyncGql("getPhotos");
+// const result = await GqlGetPhotos();
+
+
 </script>

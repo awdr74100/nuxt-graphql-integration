@@ -11,17 +11,13 @@ const userStore = useUserStore();
 
 const photoStore = usePhotoStore();
 
-const getRandom = (min: number, max: number) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
-
 const show = async (target: "user" | "photo") => {
   if (target === "user") {
-    await userStore.getUser(getRandom(1, 10));
+    await userStore.getUser(getRandomNumber(1, 10));
   }
 
   if (target === "photo") {
-    await photoStore.getPhoto(getRandom(1, 10));
+    await photoStore.getPhoto(getRandomNumber(1, 10));
   }
 };
 </script>

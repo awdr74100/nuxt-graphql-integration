@@ -8,9 +8,13 @@ export const usePhotoStore = defineStore("photo", () => {
   const photo = ref<Photo>();
 
   const getPhoto = async (id: number) => {
-    const { data } = await useAsyncGql("getPhoto", { id });
+    // const { data } = await useAsyncGql("getPhoto", { id });
 
-    photo.value = data.value.photo;
+    // photo.value = data.value.photo;
+
+    const result = await GqlGetPhoto({ id });
+
+    photo.value = result.photo;
   };
 
   return { photo, getPhoto };

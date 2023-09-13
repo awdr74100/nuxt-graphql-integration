@@ -12,6 +12,10 @@ export const useUserStore = defineStore("user", () => {
     const { data } = await useAsyncGql("getUser", { id });
 
     user.value = data.value.user;
+
+    // const result = await GqlGetUser({ id });
+
+    // user.value = result.user;
   };
 
   return { user, getUser };

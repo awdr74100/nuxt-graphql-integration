@@ -6,5 +6,5 @@
 <script setup lang="ts">
 const store = useUserStore();
 
-await store.getUser(2);
+await store.getUser(4);
 </script>
