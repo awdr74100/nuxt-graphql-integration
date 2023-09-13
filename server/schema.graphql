@@ -2,6 +2,7 @@ type Query {
   user(id: Int!): User!
   users: [User!]!
   photo(id: Int!): Photo!
+  photos: [Photo!]!
 }
 
 type User {

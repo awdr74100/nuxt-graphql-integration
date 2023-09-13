@@ -34,6 +34,11 @@ const resolvers = {
 
       return $fetch<Photo>(url, { method: "GET" });
     },
+    photos: async (parent: any, args: {}, context: any) => {
+      const url = `https://jsonplaceholder.typicode.com/photos`;
+
+      return $fetch<Photo[]>(url, { method: "GET" });
+    },
   },
 };
 
