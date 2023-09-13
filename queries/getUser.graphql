@@ -1,0 +1,8 @@
+query getUser($id: Int = 1) {
+  user(id: $id) {
+    id
+    name
+    email
+    website
+  }
+}

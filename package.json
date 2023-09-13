@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "nuxt": "^3.7.2"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.9.3",
+    "@as-integrations/h3": "^1.1.6",
+    "@pinia/nuxt": "^0.4.11",
+    "graphql": "^16.8.0",
+    "nuxt-graphql-client": "^0.2.30"
+  }
+}
